@@ -285,6 +285,10 @@ p {
   transform: translateY(-20px);
 }
 
+.logo {
+  margin-left: 5px;
+}
+
 .contactForm .inputBox input[type="submit"] {
   width: 100px;
   background: #00bcd4;
