@@ -14,7 +14,6 @@ def home_view(request):
         contact_list = Contact.objects.create(
             name=name, email=email, message=message)
         context['contact'] = contact_list
-        context['receive'] = True
 
         return render(request, 'index.html', context)
     return render(request, 'index.html')
