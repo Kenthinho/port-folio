@@ -192,7 +192,7 @@
 				</div>
 
 				<div class="contactForm">
-					{% if not receive %}
+					{% if receive %}
 						<form action="{% url 'home' %}" method="POST">
 							{% csrf_token %}
 							<h3>Leave A Message</h3>
@@ -213,9 +213,8 @@
 							<div class="inputBox">
 								<input type="submit" name="" value="Send">
 							</div>
+							<p>Thank you for contacting me {{ contact.name }}!</p>
 						</form>
-					{% else %}
-						<p>Thank you for contacting me {{ contact.name }}!</p>
 					{% endif %}
 				</div>
 			</div>
